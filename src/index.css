@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", system-ui, sans-serif;
+
+  --color-fingro-purple: #5300b7;
+  --color-fingro-purple-light: #6d28d9;
+  --color-fingro-purple-dark: #250059;
+  --color-fingro-purple-accent: #5b00c5;
+  --color-fingro-purple-muted: #512da8;
+  --color-fingro-lavender: #ebddff;
+  --color-fingro-surface: #f3f4f5;
+  --color-fingro-bg: #f8f9fa;
+  --color-fingro-ink: #191c1d;
+  --color-fingro-muted: #4a4455;
+  --color-fingro-border: rgba(204, 195, 215, 0.4);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 bg-fingro-bg font-sans text-fingro-muted antialiased;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background-image: linear-gradient(135deg, #5300b7 0%, #6d28d9 100%);
+  }
+
+  .gradient-primary-btn {
+    background-image: linear-gradient(139deg, #5300b7 0%, #6d28d9 100%);
+  }
+}
